@@ -9,7 +9,8 @@ class UserController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('user.index');
+        if(!Auth::check()) return Redirect::route('home.index');
+		else return View::make('user.index');
 	}
 
 
@@ -76,7 +77,8 @@ class UserController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		return View::make('user.edit');
+        if(!Auth::check()) return Redirect::route('home.index');
+        else return View::make('user.edit');
 	}
 
 
