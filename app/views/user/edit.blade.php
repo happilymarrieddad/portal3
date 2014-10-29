@@ -23,7 +23,7 @@
     <input type="text" class="form-control" name="last_name" id="last_name" value="{{$last_name}}" required />
 </div><hr>
 <div class="form-group">
-    <button type="submit" class="btn btn-primary">Create Account</button>
+    <button type="submit" class="btn btn-primary">Edit Account</button>
 </div>
 {{ Form::close() }}
 @stop

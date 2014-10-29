@@ -9,7 +9,7 @@ class UserController extends \BaseController {
 	 */
 	public function index()
 	{
-        if(!Auth::check()) return Redirect::route('home.index');
+        if(!Auth::check()) return View::make('error')->with('error','You have to be logged in before you can access your user profile. Thanks!');
 		else return View::make('user.index');
 	}
 
@@ -48,7 +48,7 @@ class UserController extends \BaseController {
                 return Redirect::route('home.index');
             }
             else {
-                return View::make('session.create')->with('msg', 'Please log in with account ' . Input::get('email'));
+                return View::make('error')->with('error', 'Account  ' . Input::get('email') . ' created but failed to log in. Please try logging in. If error continues, contact segfault.developer@yahoo.com with details. Thanks!');
             }
         }catch(Exception $e) {
             return View::make('user.create')->with('error', 'ERROR: ' . $e->getMessage() . ' at line ' . $e->getLine());
@@ -77,7 +77,7 @@ class UserController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-        if(!Auth::check()) return Redirect::route('home.index');
+        if(!Auth::check()) return View::make('error')->with('error','You have to be logged in before you can edit your user profile. Thanks!');
         else return View::make('user.edit');
 	}
 

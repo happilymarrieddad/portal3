@@ -22,11 +22,15 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-               <!-- <li>{{ HTML::linkRoute('home.index','Example link') }}</li> -->
+                <li>{{ HTML::linkRoute('about.index','About') }}</li>
+                <li>{{ HTML::linkRoute('tutorial.index','Tutorials') }}</li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Projects <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">1) </a></li>
+
+                        <!-- Projects -->
+                        <li>{{ HTML::linkRoute('home.index', 'Empty') }}</li>
+
                     </ul>
                 </li>
             </ul>
