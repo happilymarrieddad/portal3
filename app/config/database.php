@@ -53,7 +53,7 @@ return array(
 		),
 
 		'mysql' => array(
-			'driver'    => 'mysql',,
+			'driver'    => 'mysql',
             'host'      => getenv('DB_HOST'),
             'database'  => getenv('DB_DATA'),
             'username'  => getenv('DB_USER'),
