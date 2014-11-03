@@ -1,6 +1,6 @@
 <?php
 
-class BuilderController extends \BaseController {
+class DwarfController extends \BaseController {
 
 	/**
 	 * Display a listing of the resource.
@@ -9,11 +9,7 @@ class BuilderController extends \BaseController {
 	 */
 	public function index()
 	{
-        if(!Auth::check()) return View::make('session.create')->with('error','You must be logged in to access this area.');
-        if(!Auth::user()->builder) return View::make('session.create')->with('error',
-            'Your account does not have permissions to access this area. Please login in with an account that does. '.
-            'If you feel this is an error, please contact an administrator.');
-		return View::make('builder.index');
+		//
 	}
 
 
@@ -47,17 +43,7 @@ class BuilderController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		switch($id) {
-            // Fantasy
-            case 'dwarfs':
-                return View::make('builder.fantasy.dwarfs.index');
-                break;
-
-            // Fourtyk
-            case '2':
-                break;
-
-        }
+		//
 	}
 
 

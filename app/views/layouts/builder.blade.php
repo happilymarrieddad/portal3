@@ -4,7 +4,7 @@
     <title>@yield('title')</title>
     <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/slate/bootstrap.min.css" rel="stylesheet">
 </head>
-<body style="background-color: black">
+<body style="@yield('body')">
 
 <nav class="navbar navbar-inverse" role="navigation">
     <div class="container-fluid">
@@ -27,16 +27,7 @@
                     <ul class="dropdown-menu" role="menu">
 
                         <!-- Warhammer Armies -->
-                        <li>{{ HTML::linkRoute('builder.index','Army Builder') }}</li>
-
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Warhammer 40k <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-
-                        <!-- 40k Armies -->
-                        <li>{{ HTML::linkRoute('builder.index','Army Builder') }}</li>
+                        <li><a href="/builder/dwarfs">Dwarfs</a></li>
 
                     </ul>
                 </li>
@@ -59,12 +50,19 @@
     </div><!-- /.container-fluid -->
 </nav>
 
+<div class="row">
+    <div class="col-sm-12">
+        <button style="display:none" class="btn btn-md btn-block btn-danger" id="alert-error"></button>
+        <button style="display:none" class="btn btn-md btn-info btn-block" id="alert-loading"></button>
+        <button style="display:none" class="btn btn-md btn-block btn-success" id="alert-success"></button>
+    </div>
+</div><br />
+
 @yield('content')
 
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
 @yield('js')
 </body>
 </html>
