@@ -81,8 +81,8 @@
     <div class="panel-heading">
         <h3 class="panel-title">Options</h3>
     </div>
-    <div class="panel-body">
-        tester
+    <div class="panel-body" id="display-unit-options">
+
     </div>
 </div>
 @stop
