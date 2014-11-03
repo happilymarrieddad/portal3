@@ -11,6 +11,8 @@ Route::resource('about','AboutController');
 Route::resource('tutorial','TutorialController');
 Route::resource('computer','ComputerEngineeringController');
 Route::resource('software','SoftwareEngineeringController');
+Route::resource('project','ProjectController');
+Route::resource('builder','BuilderController');
 
 // Catch All Route
 App::missing(function() {

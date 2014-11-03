@@ -41,6 +41,7 @@ class UserController extends \BaseController {
             $user->last_name = Input::get('last_name');
             $user->admin = 0;
             $user->superuser = 0;
+            $user->builder = 0;
             $user->last_login = time();
             $user->save();
 

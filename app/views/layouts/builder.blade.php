@@ -2,9 +2,9 @@
 <html>
 <head>
     <title>@yield('title')</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/spacelab/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/slate/bootstrap.min.css" rel="stylesheet">
 </head>
-<body style="background-image: url('/images/cloud-from-the-hubble.jpg'); background-repeat: no-repeat;background-size: 100%">
+<body style="background-color: black">
 
 <nav class="navbar navbar-inverse" role="navigation">
     <div class="container-fluid">
@@ -22,20 +22,26 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li>{{ HTML::linkRoute('about.index','About') }}</li>
-                <li>{{ HTML::linkRoute('tutorial.index','Tutorials') }}</li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Projects <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Warhammer Fantasy <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
 
-                        <!-- Projects -->
-                        <li>{{ HTML::linkRoute('project.index', 'Projects Home') }}</li>
-                        <li class="divider"></li>
+                        <!-- Warhammer Armies -->
+                        <li>{{ HTML::linkRoute('builder.index','Army Builder') }}</li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Warhammer 40k <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+
+                        <!-- 40k Armies -->
                         <li>{{ HTML::linkRoute('builder.index','Army Builder') }}</li>
 
                     </ul>
                 </li>
             </ul>
+
             <ul class="nav navbar-nav navbar-right">
                 <li>@if(isset($admin) && $admin > 0){{ HTML::linkRoute('admin.index', 'Admin', array(), array()) }}@endif</li>
                 @if(isset($email))

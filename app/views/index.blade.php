@@ -16,9 +16,13 @@
                 </p><br /><br />
                 <h3>NEWS</h3><hr>
                 <p>
-                    <span>2014-OCT-29</span>
-                    <span class="pull-right">Initial news post.</span>
-                </p>
+                    <span style="text-decoration: underline">2014-NOV-02</span><br />
+                    <span>I'm working on my first project for this new site. I'll probably add all the old projects later.</span>
+                </p><br />
+                <p>
+                    <span style="text-decoration: underline">2014-OCT-29</span><br />
+                    <span>Initial news post.</span>
+                </p><br />
             </div>
         </div>
     </div>
