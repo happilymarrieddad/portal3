@@ -14,6 +14,11 @@ Route::resource('software','SoftwareEngineeringController');
 Route::resource('project','ProjectController');
 Route::resource('builder','BuilderController');
 
+
+
+// Builder Routes
+Route::post('/army/store','ArmyController@store');
+
 // Catch All Route
 App::missing(function() {
     return Redirect::route('home.index');

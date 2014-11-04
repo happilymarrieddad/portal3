@@ -31,6 +31,17 @@ return array(
 			'prefix'    => '',
 		),
 
+        'builder' => array(
+            'driver'    => 'mysql',
+            'host'      => getenv('DB_HOST'),
+            'database'  => getenv('DB_BUILDER'),
+            'username'  => getenv('DB_USER'),
+            'password'  => getenv('DB_PASS'),
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+        ),
+
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',

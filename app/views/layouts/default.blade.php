@@ -31,7 +31,7 @@
                         <!-- Projects -->
                         <li>{{ HTML::linkRoute('project.index', 'Projects Home') }}</li>
                         <li class="divider"></li>
-                        <li>{{ HTML::linkRoute('builder.index','Army Builder') }}</li>
+                        <li>{{ HTML::linkRoute('builder.index','Army Builder v1.0') }}</li>
 
                     </ul>
                 </li>

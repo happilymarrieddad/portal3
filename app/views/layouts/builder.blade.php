@@ -27,6 +27,8 @@
                     <ul class="dropdown-menu" role="menu">
 
                         <!-- Warhammer Armies -->
+                        <li>{{HTML::linkRoute('builder.index','Builder Home')}}</li>
+                        <li class="divider"></li>
                         <li><a href="/builder/dwarfs">Dwarfs</a></li>
 
                     </ul>
@@ -62,7 +64,7 @@
 
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 @yield('js')
 </body>
 </html>

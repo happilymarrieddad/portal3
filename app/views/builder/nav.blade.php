@@ -6,7 +6,7 @@
 
 @section('content')
 <div class="container">
-    <div class="row">
+    <div class="row" id="organization_information" style="display: none">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-primary">
                 <div class="panel-heading">
@@ -21,16 +21,16 @@
                             </select>
                         </div>
                         <div class="col-md-2 col-md-offset-1  form-group">
-                            <label for="pts">Points</label>
-                            <input class="form-control" name="pts" id="pts" />
+                            <label for="input-pts">Points</label>
+                            <input class="form-control" name="input-pts" id="input-pts" value="0"/>
                         </div>
                         <div class="col-md-2 col-md-offset-2 form-group">
-                            <label for="used">Used</label>
-                            <input class="form-control" name="used" id="used" value="0" readonly />
+                            <label for="display-used">Used</label>
+                            <input class="form-control" name="display-used" id="display-used" value="0" readonly />
                         </div>
                         <div class="col-md-2 col-md-offset-1 form-group">
-                            <label for="left">Left</label>
-                            <input class="form-control" name="left" id="left" value="0" readonly />
+                            <label for="display-left">Left</label>
+                            <input class="form-control" name="display-left" id="display-left" value="0" readonly />
                         </div>
                     </div><br />
                     <div class="row">

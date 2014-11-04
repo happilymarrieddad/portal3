@@ -16,6 +16,10 @@
                 </p><br /><br />
                 <h3>NEWS</h3><hr>
                 <p>
+                    <span style="text-decoration: underline">2014-NOV-03</span><br />
+                    <span>The new project is an army builder for warhammer fantasy. If you're interested in working on it, email me at segfault.developer.com</span>
+                </p><br />
+                <p>
                     <span style="text-decoration: underline">2014-NOV-02</span><br />
                     <span>I'm working on my first project for this new site. I'll probably add all the old projects later.</span>
                 </p><br />
